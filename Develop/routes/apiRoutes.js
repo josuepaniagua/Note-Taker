@@ -21,9 +21,9 @@ module.exports = () => {
 
     app.post("/api/notes", function (req, res) {
       req.body.id = notesdata.length;
-      const Note = req.body;
-      notesdata.push(Note);
-      res.json(Note);
+      const apiNote = req.body;
+      notesdata.push(apiNote);
+      res.json(apiNote);
       return create();
     });
 
